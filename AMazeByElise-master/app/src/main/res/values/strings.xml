@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="app_name">AMazeByElise</string>
+
+    <string-array name="builders">
+        <item>Default</item>
+        <item>Prim</item>
+        <item>Kruskal</item>
+    </string-array>
+
+    <string-array name="drivers">
+        <item>Manual</item>
+        <item>WallFollower</item>
+        <item>Wizard</item>
+
+    </string-array>
+    <string name="title_activity_generating">GeneratingActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="enter_the_maze">Enter the maze</string>
+    <string name="choose_a_robot_driver">Choose a robot driver</string>
+    <string name="choose_a_maze_builder">Choose a maze builder</string>
+    <string name="choose_a_skill_level">Choose a skill level</string>
+    <string name="welcome_to_the_maze">Welcome to the Maze!</string>
+    <string name="loading_your_maze_please_wait">Loading your maze… please wait…</string>
+    <string name="take_me_back">Take me back!</string>
+    <string name="energy_level">Energy Level</string>
+    <string name="start_robot">Start Robot</string>
+    <string name="pause_robot">Pause Robot</string>
+    <string name="shortcut">Shortcut</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="hide_solution">Hide Solution</string>
+    <string name="show_solution">Show Solution</string>
+    <string name="hide_map">Hide Map</string>
+    <string name="show_map">Show Map</string>
+    <string name="hide_walls">Hide Walls</string>
+    <string name="show_walls">Show Walls</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="back">Back</string>
+    <string name="title_activity_finish">FinishActivity</string>
+    <string name="you_win">YOU WIN!</string>
+    <string name="you_lose">TOO BAD!</string>
+    <string name="you_ve_exited_the_maze">You\'ve exited the maze!</string>
+    <string name="you_ran_out_of_energy">You ran out of energy!</string>
+    <string name="path_length">Path Length: </string>
+    <string name="n_a">N/A</string>
+    <string name="energy_consumed">Energy Consumed: </string>
+    <string name="return_to_menu">Return to Menu</string>
+
+</resources>

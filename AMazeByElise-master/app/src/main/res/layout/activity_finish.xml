@@ -1,0 +1,202 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="edu.wm.cs.cs301.elise.amazebyelise.gui.FinishActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/maze_fin_bg" />
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/finish_message2"
+        app:layout_constraintStart_toStartOf="@+id/finish_message2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finish_message1"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/back"
+        android:text="@string/you_win"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/finish_message2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text0" />
+
+    <TextView
+        android:id="@+id/finish_message2"
+        android:layout_width="245dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/back"
+        android:text="@string/you_ve_exited_the_maze"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_message1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/finish_message2" />
+
+
+    <TextView
+        android:id="@+id/path_length_text"
+        android:layout_width="144dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/back"
+        android:text="@string/path_length"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/energy_consumed_text"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/path_length_num"
+        android:layout_width="67dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/back"
+        android:text="@string/n_a"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/energy_consumed_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/path_length_text"
+        app:layout_constraintTop_toBottomOf="@+id/finish_message2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/path_length_text"
+        app:layout_constraintTop_toBottomOf="@+id/path_length_text" />
+
+
+    <TextView
+        android:id="@+id/energy_consumed_text"
+        android:layout_width="199dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/back"
+        android:text="@string/energy_consumed"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/menu_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/energy_consumed_num"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/back"
+        android:text="@string/n_a"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/menu_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/energy_consumed_text"
+        app:layout_constraintTop_toBottomOf="@+id/path_length_num"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/energy_consumed_text" />
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_pressed"
+        android:text="@string/return_to_menu"
+        android:textColor="@color/White"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+
+
+</android.support.constraint.ConstraintLayout>
